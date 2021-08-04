@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>FlexStart Bootstrap Template - Index</title>
+    <meta content="" name="description">
+
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <style type="text/css">
+        ul {
+            list-style: none;
+            margin: 0 !important;
+        }
+        
+        a {
+            text-decoration: none !important;
+            display: inline-block;
+        }
+        
+        img {
+            max-width: 100%;
+        }
+        
+        button:focus {
+            outline: none;
+        }
+        
+        p {
+            font-size: 14px;
+            line-height: 26px;
+            margin: 0;
+        }
+        
+        .container1 {
+            width: 100%;
+            max-width: 1140px;
+            padding: 0 15px;
+            box-sizing: border-box;
+            margin: 0 auto;
+        }
+        
+        .timelines h2 {
+            text-align: center;
+            color: #000;
+            font-weight: 600;
+            margin-bottom: 40px;
+            font-size: 32px;
+        }
+        
+        .d-flex-2 {
+            display: flex;
+            align-items: center;
+        }
+        
+        .timeline-area {
+            padding: 80px 0;
+        }
+        
+        .all-timelines {
+            position: relative;
+        }
+        
+        .timelines h2 {
+            text-align: center;
+            color: #000;
+            font-weight: 600;
+            margin-bottom: 40px;
+        }
+        
+        .all-timelines::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            height: 100%;
+            width: 2px;
+            background: #4154f1;
+            top: 20px;
+        }
+        
+        .single-timeline {
+            margin-bottom: 22px;
+        }
+        
+        .timeline-blank {
+            width: 50%;
+        }
+        
+        .timeline-text {
+            width: 50%;
+            padding-left: 30px;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            position: relative;
+        }
+        
+        .timeline-text h6 {
+            color: #000;
+            font-weight: 900;
+            display: inline-block;
+            font-size: 1rem;
+        }
+        
+        .timeline-text span {
+            color: #000;
+            display: block;
+            width: 100%;
+        }
+        
+        .single-timeline:nth-child(even) .timeline-text span {
+            text-align: right;
+        }
+        
+        .t-square {
+            content: "";
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            left: -6px;
+            background: #4154f1;
+        }
+        
+        .single-timeline:nth-child(even) {
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: reverse;
+            -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+        }
+        
+        .single-timeline:nth-child(even) .t-square {
+            right: -6px;
+            left: unset;
+        }
+        
+        .single-timeline:nth-child(even) .timeline-text {
+            padding-left: 0;
+            padding-right: 30px;
+            text-align: right;
+        }
+        
+        @media all and (max-width: 991px) {}
+        
+        @media all and (max-width: 768px) {
+            .all-timelines::before {
+                right: unset;
+                top: 0;
+            }
+            .single-timeline:nth-child(2n) .timeline-text {
+                padding-left: 30px;
+                padding-right: 0;
+                text-align: left;
+            }
+            .single-timeline:nth-child(2n) .t-square {
+                left: -6px;
+                right: unset;
+            }
+            .timeline-blank {
+                display: none;
+            }
+            .timeline-text {
+                width: 100%;
+            }
+            .single-timeline:nth-child(even) .timeline-text span {
+                text-align: left !important;
+            }
+        }
+        
+        @media all and (max-width: 575px) {}
+        
+        @media all and (max-width: 360px) {
+            .all-timelines::before {
+                top: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+            <a href="index.html" class="logo d-flex align-items-center">
+                <img src="assets/img/logo.jpg" alt="">
+                <span>SIPL</span>
+            </a>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+                    <li><a class="nav-link scrollto" href="about.html">About Us</a></li>
+                    <li><a class="nav-link scrollto" href="#services">Services</a></li>
+                    <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
+                    <li><a class="nav-link scrollto" href="#team">Team</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="#">Drop Down 1</a></li>
+                            <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                                <ul>
+                                    <li><a href="#">Deep Drop Down 1</a></li>
+                                    <li><a href="#">Deep Drop Down 2</a></li>
+                                    <li><a href="#">Deep Drop Down 3</a></li>
+                                    <li><a href="#">Deep Drop Down 4</a></li>
+                                    <li><a href="#">Deep Drop Down 5</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Drop Down 2</a></li>
+                            <li><a href="#">Drop Down 3</a></li>
+                            <li><a href="#">Drop Down 4</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-link scrollto" href="#contact">Contact Us</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+            <!-- .navbar -->
+
+        </div>
+    </header>
+    <!-- End Header -->
+    <main id="main">
+
+        <!-- ======= Breadcrumbs ======= -->
+        <section class="breadcrumbs">
+            <div class="container">
+
+                <ol>
+                    <li><a href="index.html">Home</a></li>
+                    <li>About Us</li>
+                </ol>
+                <h2>About Us</h2>
+
+            </div>
+        </section>
+        <!-- End Breadcrumbs -->
+    </main>
+    <!-- Timeline -->
+    <div class="timeline-area" style="margin-top: 50px;">
+        <div class="container1">
+            <div class="timelines">
+                <h1>Our History</h1>
+                <hr style="display: block;width: 80px;height: 3px;background-color: #4154f1; bottom: 0;">
+            </div>
+            <div class="all-timelines">
+                <!--SINGLE TIMELINE-->
+                <div class="single-timeline d-flex-2">
+                    <div class="timeline-blank"></div>
+                    <div class="timeline-text d-flex-2">
+                        <span>
+            <h6>1977</h6> — Found Shital Packaging
+          </span>
+                        <div class="t-square"></div>
+                    </div>
+                </div>
+                <!--SINGLE TIMELINE-->
+                <div class="single-timeline d-flex-2">
+                    <div class="timeline-blank"></div>
+                    <div class="timeline-text d-flex-2">
+                        <span>
+            <h6>1983</h6>— Started With Tranding of all PVC Additives
+          </span>
+                        <div class="t-square"></div>
+                    </div>
+                </div>
+                <!--SINGLE TIMELINE-->
+                <div class="single-timeline d-flex-2">
+                    <div class="timeline-blank"></div>
+                    <div class="timeline-text d-flex-2">
+                        <span>
+            <h6>1989</h6> — Found Shital Industries Pvt. Ltd.
+          </span>
+                        <div class="t-square"></div>
+                    </div>
+                </div>
+                <!--SINGLE TIMELINE-->
+                <div class="single-timeline d-flex-2">
+                    <div class="timeline-blank"></div>
+                    <div class="timeline-text d-flex-2">
+                        <span>
+            <h6>1989</h6> — Started Manufacturing Tin Stabilizers
+          </span>
+                        <div class="t-square"></div>
+                    </div>
+                </div>
+                <!--SINGLE TIMELINE-->
+                <div class="single-timeline d-flex-2">
+                    <div class="timeline-blank"></div>
+                    <div class="timeline-text d-flex-2">
+                        <span>
+            <h6>1996</h6> — Started Manufacturing Expoxidized Soyabean Oil
+          </span>
+                        <div class="t-square"></div>
+                    </div>
+                </div>
+                <!--SINGLE TIMELINE-->
+                <div class="single-timeline d-flex-2">
+                    <div class="timeline-blank"></div>
+                    <div class="timeline-text d-flex-2">
+                        <span>
+            <h6>1999</h6> — Started Research & Development on Methyl Tin Stabilizers
+          </span>
+                        <div class="t-square"></div>
+                    </div>
+                </div>
+                <!--SINGLE TIMELINE-->
+                <div class="single-timeline d-flex-2">
+                    <div class="timeline-blank"></div>
+                    <div class="timeline-text d-flex-2">
+                        <span>
+            <h6>2001</h6> — 1ST Indian Company to commence Commercial Production of Methyl Tin Stabilizer
+          </span>
+                        <div class="t-square"></div>
+                    </div>
+                </div>
+                <!--SINGLE TIMELINE-->
+                <div class="single-timeline d-flex-2">
+                    <div class="timeline-blank"></div>
+                    <div class="timeline-text d-flex-2">
+                        <span>
+          <h6>2006</h6> — Commenced commercial production of Liquid Stabilizer (Ba/Ca/Zn)
+        </span>
+                        <div class="t-square"></div>
+                    </div>
+                </div>
+                <!--SINGLE TIMELINE-->
+                <div class="single-timeline d-flex-2">
+                    <div class="timeline-blank"></div>
+                    <div class="timeline-text d-flex-2">
+                        <span>
+          <h6>2015</h6> — Established new manufacturing unit with the latest technological equipments and Machinery
+        </span>
+                        <div class="t-square"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ======= Footer ======= -->
+        <footer id="footer" class="footer mt-5" style="margin-bottom: -80px;">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row gy-4">
+                        <div class="col-lg-5 col-md-12 footer-info">
+                            <a href="index.html" class="logo d-flex align-items-center">
+                                <img src="assets/img/logo.jpg" alt="">
+                                <span>Shital Industries</span>
+                            </a>
+                            <p>We have made our professional knowledge and effective communication skill the base for achieving success.</p>
+                            <div class="social-links mt-3">
+                                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="instagram"><i class="bi bi-instagram bx bxl-instagram"></i></a>
+                                <a href="#" class="linkedin"><i class="bi bi-linkedin bx bxl-linkedin"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-6 footer-links">
+                            <h4>Useful Links</h4>
+                            <ul>
+                                <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
+                                <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
+                                <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
+                                <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+                                <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-2 col-6 footer-links">
+                            <h4>Our Services</h4>
+                            <ul>
+                                <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
+                                <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
+                                <li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
+                                <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
+                                <li><i class="bi bi-chevron-right"></i> <a href="#">Graphic Design</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+                            <h4>Contact Us</h4>
+                            <p>
+                                Behind ONGC Workshop, Motera Road, Sabarmati, Ahmedabad - 380005 <br> Gujarat, India. <br><br>
+                                <strong>Phone:</strong> +91 98987 53888<br>
+                                <strong>Email:</strong> info@shitalind.com<br>
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="copyright">
+                    &copy; Copyright <strong><span>Shital Industries Pvt. Ltd.</span></strong>. All Rights Reserved
+                </div>
+                <div class="credits">
+
+                    Designed by <a href="https://ak15suthar.github.io/Portfolio/">Abhishek Suthar</a>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+
+        <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+        <!-- Vendor JS Files -->
+        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+        <script src="assets/vendor/aos/aos.js"></script>
+        <script src="assets/vendor/php-email-form/validate.js"></script>
+        <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+        <script src="assets/vendor/purecounter/purecounter.js"></script>
+        <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+        <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+        <!-- Template Main JS File -->
+        <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
